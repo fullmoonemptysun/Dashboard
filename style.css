@@ -1,6 +1,12 @@
+
+
+
 *{
     margin: 0;
     padding: 0;
+    --fs-1: 0.7rem;
+    --fs-2: 1rem;
+
 }
 
 body{
@@ -13,9 +19,39 @@ body{
     height: 100%;
 }
 
+
+/*LEFT SIDE MENU COMPONENTS--------------*/
 .side-menu{
+    padding: 1rem;
     background-color: pink;
+    flex-direction: column;
+    gap: 3rem;
 }
+
+.side-menu ul{
+    list-style: none;
+    flex-direction: column;
+    font-size: var(--fs-3);
+    gap: 1rem;
+}
+
+
+
+/*Header Section-------------------------*/
+.header{
+    background-color: blueviolet;
+    display: grid;
+    grid-template: 1fr 1.5fr/1fr
+}
+
+.header-upper{
+    background-color: yellowgreen;
+}
+.header-lower{
+    background-color: orange;
+}
+
+
 
 .content{
     background-color: grey;
@@ -23,9 +59,7 @@ body{
     grid-template: 1fr 4fr/1fr;
 }
 
-.header{
-    background-color: blueviolet;
-}
+
 
 .main{
     display: grid;
@@ -38,4 +72,8 @@ body{
 
 .projects{
     background-color:chartreuse;
+}
+
+.flex{
+    display: flex;
 }
